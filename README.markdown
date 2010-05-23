@@ -3,7 +3,7 @@
 ## Description
 
 This application is a simulator of the LOST Terminal in the hatch.
-You can visit the LOST Terminal by going to http://lostterminal.com.
+You can visit the LOST Terminal by going to "http://lostterminal.com":http://lostterminal.com.
 This app weighs heavily on the work that Adam McCrea did for his Raffleboard.
 It is a Sinatra app that will run 100% in the browser (a cached version of the
 single index.html file is in public.
