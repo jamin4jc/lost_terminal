@@ -3,12 +3,15 @@
 ## Description
 
 This application is a simulator of the LOST Terminal in the hatch.
-It weighs heavily on the work that Adam McCrea did for his Raffleboard
-
+It weighs heavily on the work that Adam McCrea did for his Raffleboard.
 
 ## License
 
 LOST Terminal is released under the MIT License.  Fork it and have fun!
+
+Copyright (c) 2010 Adam McCrea
+
+Raffleboard is released under the MIT License.  Fork it and have fun!
 
 Copyright (c) 2010 Adam McCrea
 
