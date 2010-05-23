@@ -20,7 +20,7 @@ $.fn.extend({
 
     for (var i=0; i<html.length; i++) {
       var charValue = $('<span>').addClass('jq-solari-char-value').html(html[i]),
-          char = $('<span>').addClass('jq-solari-char').append('<hr/>').append(charValue);
+          char = $('<span>').addClass('jq-solari-char').addClass('digit-' + (i + 1)).append('<hr/>').append(charValue);
       this.append(char);
     }
 

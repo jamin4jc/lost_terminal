@@ -1,12 +1,14 @@
-# Raffleboard
+# LOST Terminal
 
 ## Description
 
-This app was written prior to CodeMash 2010 with the intent to be used for the large raffle at the end of the conference.  Although it is written specifically for CodeMash, I'd love to see it become more generalized.  It is a Sinatra web app, but all of the heavy lifting is jQuery.  The only server-side logic is finding the sponsor images (which I'd love to move out of the source repo).
+This application is a simulator of the LOST Terminal in the hatch.
+It weighs heavily on the work that Adam McCrea did for his Raffleboard
+
 
 ## License
 
-Raffleboard is released under the MIT License.  Fork it and have fun!
+LOST Terminal is released under the MIT License.  Fork it and have fun!
 
 Copyright (c) 2010 Adam McCrea
 

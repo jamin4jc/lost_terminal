@@ -2,55 +2,34 @@
 %html
   
   %head
-    %title Raffleboard
+    %title LOST Hatch Terminal
     %link{ :href => 'stylesheets/reset.css', :type => 'text/css', :rel => 'stylesheet' }
     %link{ :href => 'stylesheets/application.css', :type => 'text/css', :rel => 'stylesheet' }
     %script{ :src => 'javascripts/jquery.js', :language => 'javascript', :type => 'text/javascript' }
     %script{ :src => 'javascripts/rand.js', :language => 'javascript', :type => 'text/javascript' }
     %script{ :src => 'javascripts/solari.js', :language => 'javascript', :type => 'text/javascript' }
     %script{ :src => 'javascripts/application.js', :language => 'javascript', :type => 'text/javascript' }
-  
-  %body
+    %link{ :rel => "icon", :href => "favicon.ico", :type => "image/x-icon" }
+    %link{ :rel => "shortcut icon", :href => "favicon.ico", :type => "image/x-icon" }
+ 
+  %body{ :onload=>"reset_timer(6480)" }
+    
+    :javascript
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      try {
+        var pageTracker = _gat._getTracker("UA-16565075-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
 
     #header
-      %a#add_entries_link{ :href => '#' }add entries
-      %a#prizes_link{ :href => '#' } sponsors
-      %a#pick_1.pick{ :href => '#' } Pick 1
-      %a#pick_5.pick{ :href => '#' } Pick 5
+      %a#add_entries_link{ :href => '#' }>>:
       
       %form{ :id => 'entries_form' }
-        %input{ :type => :text, :id => :new_entries, :value => 'numbers, ranges...' }
-        %input{ :type => :submit, :value => 'Add These' }
-
-      %select#prize_selection= @prize_options
+        %input{ :type => :text, :id => :new_entries, :value => '' }
 
     #wrapper
-    
-      #prizes
-        %img{ :id => 'sponsor', :src => '/images/sponsors/Codemash.gif' }
-
-      #winners
-        %h1= 'WINNERS (<span id="entry_counter">0</span> entries left)'
+       
+      #timer
         %ul
-
-      #drawing
-        %ul
-          %li 
           %li
-          %li
-          %li
-          %li
-
-      %ul#credits
-        %li
-          written by
-          %a{ :href => 'http://twitter.com/adamlogic' } @adamlogic
-        %li
-          designed by
-          %a{ :href => 'http://twitter.com/nummi' } @nummi
-        %li
-          inspired by
-          %a{ :href => 'http://twitter.com/webpoobah' } @webpoobah
-        %li
-          fork me on
-          %a{ :href => 'http://github.com/adamlogic/raffleboard' } github
