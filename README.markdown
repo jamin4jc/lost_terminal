@@ -3,7 +3,6 @@
 ## Description
 
 This application is a simulator of the LOST Terminal in the hatch.
-You can visit the LOST Terminal by going to http://lostterminal.com.
 This app weighs heavily on the work that Adam McCrea did for his Raffleboard.
 It is a Sinatra app that will run 100% in the browser (a cached version of the
 single index.html file is in public.
@@ -12,7 +11,7 @@ single index.html file is in public.
 
 LOST Terminal is released under the MIT License.  Fork it and have fun!
 
-Copyright (c) 2010 Adam McCrea
+Copyright (c) 2010 Ben Wagaman
 
 Raffleboard is released under the MIT License.  Fork it and have fun!
 
